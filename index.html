@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/stylesheet.css" />
     <title>Test Responsiveness | Matías Delgado</title>
   </head>
@@ -20,8 +21,14 @@
     <main>
       <p>Hola! soy un texto de relleno para probar la responsiveness</p>
     </main>
-    <footer>
-      <p>Hola! soy un footer de prueba</p>
+    <footer class="grid grid-cols-2 fixed bottom-0 w-full bg-slate-200">
+      <p class="text-left bg-inherit">Hola! soy un footer de prueba</p>
+      <p class="text-right bg-inherit">
+        Yo deberia estar alineado a la derecha
+      </p>
+      <p class="text-left bg-inherit">
+        <a href="">Yo soy un link de prueba</a>
+      </p>
     </footer>
   </body>
 </html>
